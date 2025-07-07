@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .amazon {
+            background-color: #13161a;
+            color: white;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+        }
+        .amazon-logo img {
+            width: 100px;
+            height: 30px;
+        }
+        .amazon-search {
+            flex: 1;
+            display: flex;
+            margin: 0 20px;
+        }
+        input {
+            width: 10;
+            padding: 6px 10px;
+            border: none;
+            border-radius: 10px;
+            display: flex;
+            color: #13161a;
+        }
+        button {
+            background: #febd69;
+            padding:  10px;
+            border-radius:10px;
+            display: flex;
+            border-color: rgb(196, 186, 214) ;
+        }
+        .amazon-links {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .amazon-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            cursor: pointer;
+            padding: 0 8px;
+        }
+    </style>
+</head>
+<body>
+   <div class="amazon">
+        <div class="amazon-logo">
+            <a href="https://www.amazon.in/?&tag=googhydrabk1-21&ref=pd_sl_5szpgfto9i_e&adgrpid=155259813593&hvpone=&hvptwo=&hvadid=674893540034&hvpos=&hvnetw=g&hvrand=8003321971509852868&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9147001&hvtargid=kwd-64107830&hydadcr=14452_2316413&gad_source=1"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo"></a>
+        </div>
+        <div class="amazon-links">
+            <a href="https://www.google.com/maps/@17.5603712,78.4531456,14z?authuser=0&entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D"><span class="glyphicon glyphicon-map-marker"></span> Deliver to<br><strong>India</strong></a>
+        </div>
+        <form class="amazon-search" role="search">
+            <input type="text" placeholder="Search">
+            <button type="submit"><span class="glyphicon glyphicon-search"></span></button>
+        </form>
+        <div class="amazon-links">
+            <a href="#">Hello, Sign in<br><strong>Account & Lists</strong></a>
+            <a href="#">Returns<br><strong>& Orders</strong></a>
+            <a href="#" class="amazon-cart">
+                <span class="glyphicon glyphicon-shopping-cart"></span>
+                <strong>Cart</strong>
+            </a>
+        </div>
+   </div>
